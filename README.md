@@ -4,3 +4,5 @@ Device mapper plugin can be used for "power save" purposes when using external d
 
 It requires udev daemon running in the system as well as some mechanism to turn on/off the device.
 (Eg. A GPIO that controls the power supply of the drive etc).
+
+DM Relay wiki -> https://github.com/sygi1982/dm-relay/wiki
