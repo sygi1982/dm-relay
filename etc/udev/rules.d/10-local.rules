@@ -1,0 +1,5 @@
+#SUBSYSTEM=="dm-relay", ACTION=="change", ENV{RELAY_SWITCH}=="OFF", RUN+="/bin/umount /mnt"
+#SUBSYSTEM=="dm-relay", ACTION=="change", ENV{RELAY_SWITCH}=="ON", RUN+="/bin/mount /dev/mapper/relaydisk /mnt"
+SUBSYSTEM=="dm-relay", ACTION=="change", ENV{RELAY_SWITCH}=="ON", RUN+="/usr/bin/beep -f 400.7"
+SUBSYSTEM=="dm-relay", ACTION=="change", ENV{RELAY_SWITCH}=="OFF", RUN+="/usr/bin/beep -f 300.7"
+
